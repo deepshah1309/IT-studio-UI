@@ -1,0 +1,39 @@
+.Navigation{
+   
+    display:grid;
+    z-index:100;
+
+    background-color: white;
+    padding-top:2rem;
+    padding-bottom:1rem;
+    grid-template-columns:30% 70%;
+    grid-template-areas: "logo Navigation-menu";
+    flex-direction: column;
+
+}
+.part1{
+    grid-area: "logo";
+    padding-left:10%;
+
+}
+.part2{
+   
+    grid-area:"Navigation-menu";
+}
+
+@media only screen and (max-width:700px){
+.Navigation{
+    
+    display:grid;
+    z-index:100;
+
+    background-color: white;
+    padding-top:2rem;
+    padding-bottom:1rem;
+    grid-template-columns:100%;
+    grid-template-areas: "logo";
+}
+.part2{
+    display: none;
+}
+}
