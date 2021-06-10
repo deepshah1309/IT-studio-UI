@@ -1,6 +1,7 @@
 .roundit{
     border-radius: 15px;
-    width:60%;
+    margin-top:1rem;
+    width:80%;
     
     
     display:grid;
@@ -17,7 +18,7 @@
     border-bottom-left-radius:16px;
     outline-style: none;
     height: 80%;
-    font-size:2rem;
+    font-size:1.2rem;
 }
 .part2search{
     grid-area:"icon";
@@ -25,7 +26,7 @@
     margin-left:-3rem;
 }
 .part2search img{
-    height:100%;
+    height:94%;
 
     border-top-right-radius:16px;
     border-bottom-right-radius: 16px;
