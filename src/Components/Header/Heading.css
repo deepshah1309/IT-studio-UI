@@ -1,0 +1,225 @@
+.Heading{
+    overflow-x: hidden;
+    display:grid;
+    width:100%;
+    max-width:100vw;
+    height:auto;
+    grid-template-columns:40% 60%;
+    grid-template-areas: "textpart imagepart";
+}
+.bigcircle{
+    position:absolute;
+    z-index:-3;
+    margin-top:-5rem;
+    margin-left:-3rem;
+}
+.smallcircle{
+    position:absolute;
+    z-index:-3;
+    margin-top:-4rem;
+   left:40vw;
+
+}
+.textcontent{
+        grid-area:textpart;
+        width:100%;
+        min-height:100vh;
+        height:auto;
+       
+}
+.imagepart{
+    grid-area:imagepart;
+    
+    /* height:1200px; */
+   background-image:url("../../Assets/over.svg");
+    margin-top:-8rem;
+    background-size:120%;
+    background-position:right -14rem top -7rem;
+    z-index:-3;
+    margin-right:-5rem;
+    width:100%;
+    min-height:140vh;
+    height:auto;
+    background-repeat: no-repeat; 
+    /* border:2px solid black; */
+    /* */ 
+}
+.circle{
+    margin-top:-3rem;
+    margin-left: -6rem;
+    padding-left:-8rem;
+    margin-bottom:4rem;
+    height:200px;
+    /* background-repeat: no-repeat;
+    background-image:url("../../Image-Assets/Circle.svg") ; */
+    /* background-position: left -10rem top 3rem; */
+   
+}
+
+.content{
+    
+
+   
+    padding-top:10%;
+    padding-left:25%;
+}
+.UpperText{
+    height:300px;
+    background-repeat: no-repeat;
+    /* background-image:url("../../Image-Assets/Circle.svg") ; */
+    background-position: top 4rem bottom -4rem;
+    color:#5aabf0;
+    font-size:1rem;
+    padding-top:100px;
+    margin-left:-3rem;
+
+    /* padding-left:10%; */
+    padding-left:10%;
+    padding-bottom: 2rem;
+    margin-bottom:-20rem;
+    font-weight:bolder;
+}
+.content .typingtext{
+    font-weight:bolder;
+    font-size:5rem;
+    margin-right:-17rem;
+    margin-top:-3rem;
+    height:25vh;
+    color:#082265;
+}
+.text1{
+padding-top:10%;
+margin-top:2rem;
+font-size:1.4rem;
+/* background-image: url("../../Image-Assets//El-2.svg"); */
+
+}
+.text2{
+
+font-size:1.4rem;
+}
+.SearchPartInsearch{
+    margin-top:10%;
+}
+.seearch_services{
+    font-weight:bolder;
+    font-size:1rem;
+    margin:1rem 0rem;
+}
+.search_services{
+    font-weight: bolder;
+   
+}
+
+@media only screen and (max-width:768px){
+    .Heading{
+
+        display:grid;
+        width:100%;
+
+        max-width:100vw;
+        height:auto;
+        grid-template-columns:auto;
+        grid-template-rows:1fr;
+        grid-template-areas: "imagepart" "textpart";
+    }
+    .SearchPart{
+        /* left:50%;
+        transform:translateX(-50%); */
+        text-align: center;
+    }
+    .search_services{
+            font-weight: bolder;
+           
+    }
+    .searchboxarea{
+        display: flex;
+        place-items: center;
+        justify-content: center;
+       
+    }
+    .content .typingtext{
+        font-weight:bolder;
+        font-size:2rem;
+        margin-top:-3rem;
+        margin-right:0rem;
+        height:25vh;
+        color:#082265;
+    }
+    .textcontent{
+        margin-top:0;
+        padding-top: 0;
+    }
+    .imagepart{
+        grid-area:imagepart;
+        
+        /* height:1200px; */
+       background-image:url("../../Assets/MobilePeople.svg");
+        margin-top:-8rem;
+        background-size:cover;
+        background-position:left 0rem top -4rem;
+        z-index:-3;
+        /* margin-right:-5rem; */
+        width:100%;
+       
+        min-height:100vh;
+        height:auto;
+        background-repeat: no-repeat; 
+        /* border:2px solid black; */
+        /* */ 
+    }
+    .UpperText{
+        height:300px;
+        background-repeat: no-repeat;
+        /* background-image:url("../../Image-Assets/Circle.svg") ; */
+        background-position: top 4rem bottom -4rem;
+        color:#5aabf0;
+        font-size:1rem;
+        padding-top:100px;
+        margin-left:-3rem;
+        background-size:30%;
+        /* padding-left:10%; */
+        padding-left:10%;
+        padding-bottom: 2rem;
+        margin-bottom:-20rem;
+        font-weight:bolder;
+    }
+    .smallcircle{
+       display: none;
+    }
+    .content{
+    
+        padding-top:0%;
+        /* margin-top:-50%; */
+        
+        padding-right: 10%;
+        padding-left:10%;
+    }
+    .bigcircle{
+        height:20%;
+        left:2.3%;
+
+        /* padding-top:5%; */
+
+    }
+    .text1{
+
+        /* margin-top:2rem; */
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        font-size:1.2rem;
+  
+        background-repeat: no-repeat;
+        background-size: 30%;
+        
+        background-position: left 90% top 0%;
+    }
+    .text2{
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        padding:1% 5%;
+    }
+}

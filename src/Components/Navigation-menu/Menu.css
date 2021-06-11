@@ -1,9 +1,0 @@
-.MenuNavigation{
-    display: flex;
-    justify-content: space-evenly;
-}
-.item{
-    color:#082265;
-    font-size:1.3rem;
-    font-weight: bold;
-}
