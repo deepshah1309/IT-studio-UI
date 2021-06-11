@@ -1,7 +1,8 @@
 import React from "react";
 import "./Home.css";
 import Header from "../Header/Header";
-import WeBuild from "../WeBuild/WeBuild";
+import WeBuild from "../WeBuild/WeBuild/WeBuild";
+
 const Home = () => {
   return (
     <div className="Home">

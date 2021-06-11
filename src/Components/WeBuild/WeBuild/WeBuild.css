@@ -12,32 +12,15 @@
 .weBuild_main_box {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  padding-left: 60px;
 }
-.card_box {
-  text-align: center;
-  background-color: white;
-  width: 323px;
-  height: 534px;
-  margin-left: 20px;
-  border-radius: 15px;
-  transition: all linear 0.5s;
-}
-.card_box:hover {
-  background-color: #00affa;
-  transition: all linear 0.5s;
-}
-.card_box h2 {
-  font-size: 43px;
-  height: 120px;
-}
-.card_box img {
-  width: 50%;
-}
+
 @media only screen and (max-width: 500px) {
   .weBuild_main_box {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+    padding-left: 0;
   }
   .card_box {
     margin-top: 30px;
