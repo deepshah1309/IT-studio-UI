@@ -33,7 +33,7 @@
 .card_box img {
   width: 50%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .weBuild_main_box {
     display: grid;
     grid-template-columns: auto;

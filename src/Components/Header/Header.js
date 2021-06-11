@@ -1,5 +1,5 @@
-import Navigation from "../Navigation-Header/Navigation";
-import Heading from "../Header-HeadingText/Heading";
+import Navigation from "./HeaderNavigation/Navigation";
+import Heading from "./Heading";
 const Header=()=>{
     return (
         <div className="HeaderPart">
