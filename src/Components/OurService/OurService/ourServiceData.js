@@ -45,11 +45,7 @@ const OurServiceData = [
     tittle: "CRM",
     icon: camera,
   },
-  {
-    id: "7",
-    tittle: "CRM",
-    icon: camera,
-  },
+
   {
     id: "8",
     tittle: "Content Development",
