@@ -1,9 +1,9 @@
 .card_box {
   text-align: center;
   background-color: white;
-  width: 25%;
+  width: 406px;
   height: 534px;
-  margin-left: 20px;
+  margin-left: 6px;
   border-radius: 15px;
   transition: all linear 0.5s;
 }
