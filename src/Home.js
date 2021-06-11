@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import Header from "./Components/Header/Header";
 import {Helmet} from "react-helmet";
-import WeBuild  from "./Components/WeBuild/WeBuild";
+import WeBuild  from "./Components/WeBuild/WeBuild/WeBuild"
 const Home=()=>{
     return (
         <div className="Home">

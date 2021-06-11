@@ -12,6 +12,7 @@
 .weBuild_main_box {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  padding-left: 60px;
 }
 .card_box {
   text-align: center;
@@ -38,6 +39,7 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+    padding-left: 0;
   }
   .card_box {
     margin-top: 30px;
