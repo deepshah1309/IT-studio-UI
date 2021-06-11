@@ -1,5 +1,5 @@
 import React from "react";
-import "./WebuildCard.css";
+import "../WeBuildCard/WeBuildCard.css";
 
 const WebuildCard = (props) => {
   const { tittle, icon } = props.data;
