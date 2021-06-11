@@ -1,8 +1,8 @@
 .card_box {
   text-align: center;
   background-color: white;
-  width: 406px;
-  height: 534px;
+  width: 90%;
+  height: 634px;
   margin-left: 6px;
   border-radius: 15px;
   transition: all linear 0.5s;
@@ -17,4 +17,16 @@
 }
 .card_box img {
   width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .card_box {
+    width: 50%;
+    margin-top: 30px;
+    height: 300px;
+  }
+  .card_box h2 {
+    font-size: 28px;
+    height: 100px;
+  }
 }
