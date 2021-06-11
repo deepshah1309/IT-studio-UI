@@ -1,20 +1,20 @@
 .card_box {
-    text-align: center;
-    background-color: white;
-    width: 323px;
-    height: 534px;
-    margin-left: 20px;
-    border-radius: 15px;
-    transition: all linear 0.5s;
-  }
-  .card_box:hover {
-    background-color: #00affa;
-    transition: all linear 0.5s;
-  }
-  .card_box h2 {
-    font-size: 43px;
-    height: 120px;
-  }
-  .card_box img {
-    width: 50%;
-  }
+  text-align: center;
+  background-color: white;
+  width: 25%;
+  height: 534px;
+  margin-left: 20px;
+  border-radius: 15px;
+  transition: all linear 0.5s;
+}
+.card_box:hover {
+  background-color: #00affa;
+  transition: all linear 0.5s;
+}
+.card_box h2 {
+  font-size: 43px;
+  height: 120px;
+}
+.card_box img {
+  width: 50%;
+}
