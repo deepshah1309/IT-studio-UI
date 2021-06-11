@@ -1,9 +1,10 @@
 import React from "react";
 import brand from "../../../Assets/weBuilt_assests/brand.png";
 import design from "../../../Assets/weBuilt_assests/design.png";
-import experience from "../../../Assets/weBuilt_assests/experience.png";
+import experience from "../../../Assets/weBuilt_assests/design.png";
 import software from "../../../Assets/weBuilt_assests/software.png";
 import WebuildCard from "../WeBuildCard/WebuildCard";
+
 import "./WeBuild.css";
 const WeBuildData = [
   {
