@@ -3,12 +3,17 @@
   background-color: white;
   width: 90%;
   height: 634px;
-  margin-left: 20px;
+  margin-left: 15px;
   border-radius: 15px;
   transition: all linear 0.5s;
 }
 .card_box:hover {
-  background-color: #00affa;
+  background: #00affa;
+  /* background: linear-gradient(
+    0deg,
+    rgba(20, 103, 170, 1) 44%,
+    rgba(0, 175, 250, 1) 85%
+  ); */
   transition: all linear 0.5s;
 }
 .card_box h2 {

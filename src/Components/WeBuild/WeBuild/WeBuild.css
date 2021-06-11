@@ -12,7 +12,7 @@
 .weBuild_main_box {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  padding-left: 35px;
+  padding-left: 6px;
 }
 
 @media only screen and (max-width: 768px) {

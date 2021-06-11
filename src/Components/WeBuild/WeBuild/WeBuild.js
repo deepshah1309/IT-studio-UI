@@ -1,7 +1,7 @@
 import React from "react";
 import brand from "../../../Assets/weBuilt_assests/brand.png";
+import website from "../../../Assets/weBuilt_assests/website.png";
 import design from "../../../Assets/weBuilt_assests/design.png";
-import experience from "../../../Assets/weBuilt_assests/design.png";
 import software from "../../../Assets/weBuilt_assests/software.png";
 import WebuildCard from "../WeBuildCard/WeBuildCard";
 
@@ -20,12 +20,12 @@ const WeBuildData = [
   {
     id: "3",
     tittle: "Digital Design",
-    icon: design,
+    icon: website,
   },
   {
     id: "4",
     tittle: "Experience Design",
-    icon: experience,
+    icon: design,
   },
 ];
 const WeBuild = () => {
