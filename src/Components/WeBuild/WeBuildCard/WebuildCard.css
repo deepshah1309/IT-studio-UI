@@ -26,7 +26,10 @@
     height: 300px;
   }
   .card_box h2 {
-    font-size: 28px;
+    font-size: 20px;
     height: 100px;
+  }
+  .card_box img {
+    width: 75%;
   }
 }

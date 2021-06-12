@@ -4,6 +4,10 @@ import OurServiceCard from "../OurServiceCard/OurServiceCard";
 import "../OurService/OurService.css";
 
 const OurService = () => {
+  const leftSide = OurServiceData.slice(0, 2);
+  const midOne = OurServiceData.slice(2, 5);
+  const midTwo = OurServiceData.slice(5, 8);
+  const rightSide = OurServiceData.slice(8, 10);
   return (
     <section className="ourService_container">
       <div className="ourService_content_box">
@@ -14,9 +18,26 @@ const OurService = () => {
         </p>
       </div>
       <div className="ourService_card_main_box">
-        {OurServiceData.map((service) => (
-          <OurServiceCard key={service.id} service={service} />
-        ))}
+        <div className="ourService_card_main_box_left">
+          {leftSide.map((service) => (
+            <OurServiceCard key={service.id} service={service} />
+          ))}
+        </div>
+        <div className="ourService_card_main_box_midOne">
+          {midOne.map((service) => (
+            <OurServiceCard key={service.id} service={service} />
+          ))}
+        </div>
+        <div className="ourService_card_main_box_midTwo">
+          {midTwo.map((service) => (
+            <OurServiceCard key={service.id} service={service} />
+          ))}
+        </div>
+        <div className="ourService_card_main_box_rightSide">
+          {rightSide.map((service) => (
+            <OurServiceCard key={service.id} service={service} />
+          ))}
+        </div>
       </div>
     </section>
   );

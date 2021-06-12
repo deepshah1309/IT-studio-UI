@@ -1,10 +1,10 @@
 .ourService_card_box {
   text-align: center;
   background-color: white;
-  width: 68%;
+  width: 92%;
   height: 606px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -14,16 +14,13 @@
 .ourService_card_box h2 {
   width: 50%;
   font-size: 31px;
-  margin-bottom: 80px;
 }
 .ourService_card_box img {
   width: 70%;
 }
 .box1 {
-  margin-top: 200px;
 }
 .box4 {
-  margin-top: 200px;
 }
 
 .box9 {

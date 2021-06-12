@@ -22,4 +22,10 @@
     justify-items: center;
     padding-left: 0;
   }
+  .weBuild_header_box h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding: 70px 0;
+  }
 }
