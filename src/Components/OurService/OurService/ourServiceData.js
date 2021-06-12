@@ -12,54 +12,64 @@ import digital from "../../../Assets/weBuilt_assests/youtube.png";
 const OurServiceData = [
   {
     id: "1",
-    tittle: "Web Development",
+    tittle: "Website Development",
     icon: website,
+    classBox: "ourService_card_box box1",
   },
   {
     id: "2",
     tittle: "Web App Development",
     icon: software,
+    classBox: "ourService_card_box box2",
   },
   {
     id: "3",
     tittle: "Mobile App Development",
     icon: mobile,
+    classBox: "ourService_card_box box3",
   },
   {
     id: "4",
     tittle: "Graphic Design",
     icon: design,
+    classBox: "ourService_card_box box4",
   },
   {
     id: "5",
     tittle: "Artificial  Intelligence",
     icon: artificial,
+    classBox: "ourService_card_box box5",
   },
   {
     id: "6",
     tittle: "Branding",
     icon: brand,
+    classBox: "ourService_card_box box6",
   },
   {
     id: "7",
     tittle: "CRM",
     icon: camera,
+    classBox: "ourService_card_box box7",
   },
 
   {
     id: "8",
     tittle: "Content Development",
     icon: content,
+    classBox: "ourService_card_box box8",
   },
   {
     id: "9",
     tittle: "ERP",
     icon: team,
+    classBox: "ourService_card_box box9",
   },
   {
     id: "10",
     tittle: "Digital Marketing",
     icon: digital,
+    classBox: "ourService_card_box box10",
   },
 ];
 

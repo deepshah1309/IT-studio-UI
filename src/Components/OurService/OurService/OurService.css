@@ -4,6 +4,9 @@
 .ourService_card_main_box {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+
+  align-items: center;
+  justify-items: center;
 }
 .ourService_content_box {
   text-align: center;
