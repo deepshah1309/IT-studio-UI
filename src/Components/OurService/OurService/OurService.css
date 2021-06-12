@@ -5,3 +5,19 @@
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
+.ourService_content_box {
+  text-align: center;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ourService_content_box h2 {
+  font-size: 60px;
+}
+.ourService_content_box p {
+  width: 550px;
+  font-size: 20px;
+  padding-bottom: 150px;
+}
