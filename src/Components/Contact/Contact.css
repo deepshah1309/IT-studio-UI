@@ -1,0 +1,126 @@
+.contact-main {
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins";
+}
+
+.contact {
+  width: 80%;
+  display: flex;
+  margin-top: 10%;
+}
+.contact-header {
+  color: black;
+  font-size: large;
+  font-size: x-large;
+  margin-top: 5%;
+}
+
+.contact-info {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-top: 3%;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-svg {
+  width: 10%;
+  margin-right: 20px;
+}
+
+.social-handles {
+  width: 50%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sh {
+  width: 5%;
+  margin: 20px;
+}
+
+.contact-map {
+  border-radius: 25px;
+}
+
+.contact-middle {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 25px;
+  border-radius: 25px;
+
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.12);
+}
+
+.contact-map {
+  width: 50%;
+  height: 50%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-self: flex-start;
+  margin-top: 25px;
+}
+
+form {
+  margin-top: 25px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.form-textarea {
+  resize: none;
+}
+
+.inp {
+  padding: 10px;
+  border-radius: 5px;
+  align-self: flex-start;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 2px solid rgba(12, 11, 11, 0.315);
+}
+
+.form-btn {
+  align-self: flex-start;
+  left: 10%;
+  width: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #4fc0e6 0%, #382bee 100%);
+  color: aliceblue;
+  font-weight: bold;
+  padding-right: 20px;
+  padding-left: 20px;
+  outline: none;
+  margin-top: 25px;
+  border: none;
+}

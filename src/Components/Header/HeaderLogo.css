@@ -1,14 +1,12 @@
-.differ{
-color:#5aabf0;
+.differ {
+  color: #5aabf0;
 }
-.Logo{
-    font-size:2.3rem;
-    font-weight: bolder;
-    
+.Logo {
+  font-size: 2.3rem;
+  font-weight: bolder;
 }
-@media only screen and (max-width:768px){
-    .Logo{
-        font-size:1rem;
-    }
-  
+@media only screen and (max-width: 768px) {
+  .Logo {
+    font-size: 1rem;
+  }
 }
