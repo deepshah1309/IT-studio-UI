@@ -27,5 +27,5 @@ const mapStyles = {
 };
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyCZFgjpL5d5falHCblbSzymeuEIQP6WWZ0",
+  apiKey: "",
 })(MapContainer);
