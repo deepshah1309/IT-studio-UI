@@ -1,7 +1,7 @@
 .ourService_card_box {
   text-align: center;
   background-color: white;
-  width: 92%;
+  width: 85%;
   height: 606px;
   margin-bottom: 20px;
   margin-left: 10px;
@@ -25,4 +25,20 @@
 
 .box9 {
   grid-column: 2/3;
+}
+
+@media only screen and (max-width: 768px) {
+  .ourService_card_box {
+    width: 51.5%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .ourService_card_box img {
+    width: 65%;
+  }
+  .ourService_card_box h2 {
+    width: 70%;
+    font-size: 20px;
+  }
 }

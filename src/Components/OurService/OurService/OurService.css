@@ -43,20 +43,38 @@
   .ourService_card_main_box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .ourService_card_main_box_left {
     width: 100%;
     padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .ourService_card_main_box_midOne {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .ourService_card_main_box_midTwo {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .ourService_card_main_box_rightSide {
     width: 100%;
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .ourService_content_box p {
     width: 250px;
