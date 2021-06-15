@@ -4,6 +4,7 @@ import Search from "./HeaderSearchBox";
 
 import Circle from "./HeaderCircle";
 import SmallCircle from "./SmallCircle";
+import Rectangle  from "./Rectangle";
 const Heading=()=>{
     //url at right side
    console.log(process.env.PUBLIC_URL);
@@ -17,7 +18,9 @@ const Heading=()=>{
                         --Best service
                         <div  className="bigcircle"><Circle/></div>
                         </div>
+                    
                         <div className="typingtext">
+                        <div className="rectanglepart"><Rectangle/></div>
                         <Typewriter
                           
                           options={{
@@ -26,7 +29,7 @@ const Heading=()=>{
                               loop: true,
                           }}
                       />
-                      
+                          
                         
                         </div>
                         <div className="text1">

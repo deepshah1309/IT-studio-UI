@@ -1,9 +1,35 @@
-.MenuNavigation{
-    display: flex;
-    justify-content: space-evenly;
+.MenuNavigation {
+  display: flex;
+  justify-content: space-evenly;
 }
-.item{
-    color:#082265;
-    font-size:1.3rem;
-    font-weight: bold;
+.item {
+  color: #082265;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.closeIcon{
+
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+
+  .MenuNavigation{
+    display:grid;
+ 
+    background-color: white;
+    color:black;
+    width:70vw;
+    grid-template-rows: auto;
+  }
+  .closeIcon{
+    display:grid;
+    color:white;
+    background-color: #5aabf0;
+    width:70vw;
+    grid-template-columns:50% 50%;
+  font-size: 1.3rem;
+    text-align: right;
+    
+  }
+
 }

@@ -4,20 +4,22 @@
     width:100%;
     max-width:100vw;
     height:auto;
+  
     grid-template-columns:40% 60%;
     grid-template-areas: "textpart imagepart";
 }
 .bigcircle{
     position:absolute;
-    z-index:-3;
-    margin-top:-5rem;
-    margin-left:-3rem;
+    z-index:-5;
+    margin-top:-6rem;
+    margin-left:-4rem;
 }
 .smallcircle{
     position:absolute;
     z-index:-3;
     margin-top:-4rem;
    left:40vw;
+   
 
 }
 .textcontent{
@@ -25,6 +27,7 @@
         width:100%;
         min-height:100vh;
         height:auto;
+        
        
 }
 .imagepart{
@@ -32,7 +35,7 @@
     
     /* height:1200px; */
    background-image:url("../../Assets/over.svg");
-    margin-top:-8rem;
+    margin-top:-9rem;
     background-size:120%;
     background-position:right -14rem top -7rem;
     z-index:-3;
@@ -57,8 +60,8 @@
 }
 
 .content{
-    
-
+/*     
+    background-color: #F0FFFF; */
    
     padding-top:10%;
     padding-left:25%;
@@ -85,6 +88,7 @@
     margin-right:-17rem;
     margin-top:-3rem;
     height:25vh;
+    position: relative;
     color:#082265;
 }
 .text1{
@@ -104,13 +108,31 @@ font-size:1.4rem;
 .seearch_services{
     font-weight:bolder;
     font-size:1rem;
-    margin:1rem 0rem;
+
+    margin:2rem 0rem;
 }
 .search_services{
     font-weight: bolder;
    
 }
+.rectanglepart{
+   
+  position: absolute;
+    /* margin-top:-3rem;
+    margin-left: 6rem;
+    padding-left:8rem;
+    margin-bottom:4rem; */
+    padding-top: 1rem;
+    height:70px;
+    width:160px;
+    z-index:-2;
+    margin-left:68%;
+    background-color: #5aabf0;
+}
 
+.SearchPart{
+    margin-top: 3rem;
+}
 @media only screen and (max-width:768px){
     .Heading{
 
@@ -138,10 +160,23 @@ font-size:1.4rem;
         justify-content: center;
        
     }
+    .rectanglepart{
+   
+        position: absolute;
+          /* margin-top:-3rem;
+          margin-left: 6rem;
+          padding-left:8rem;
+          margin-bottom:4rem; */
+          height:30px;
+          width:90px;
+          z-index:-2;
+          margin-left:80%;
+          background-color: #5aabf0;
+      }
     .content .typingtext{
         font-weight:bolder;
         font-size:2rem;
-        margin-top:-3rem;
+        margin-top:0rem;
         margin-right:0rem;
         height:25vh;
         color:#082265;
