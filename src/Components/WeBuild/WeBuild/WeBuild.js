@@ -3,7 +3,8 @@ import brand from "../../../Assets/weBuilt_assests/brand.png";
 import website from "../../../Assets/weBuilt_assests/website.png";
 import design from "../../../Assets/weBuilt_assests/design.png";
 import software from "../../../Assets/weBuilt_assests/software.png";
-import WebuildCard from "../WeBuildCard/WebuildCard";
+
+import WeBuildCard from "../WeBuildCard/WeBuildCard";
 
 import "./WeBuild.css";
 const WeBuildData = [
@@ -36,7 +37,7 @@ const WeBuild = () => {
       </div>
       <div className="weBuild_main_box">
         {WeBuildData.map((data) => (
-          <WebuildCard key={data.id} data={data} />
+          <WeBuildCard key={data.id} data={data} />
         ))}
       </div>
     </section>

@@ -1,7 +1,8 @@
 import React from "react";
-import "./WebuildCard.css";
 
-const WebuildCard = (props) => {
+import "./WeBuildCard.css";
+
+const WeBuildCard = (props) => {
   const { tittle, icon } = props.data;
   console.log(icon);
   return (
@@ -12,4 +13,4 @@ const WebuildCard = (props) => {
   );
 };
 
-export default WebuildCard;
+export default WeBuildCard;
