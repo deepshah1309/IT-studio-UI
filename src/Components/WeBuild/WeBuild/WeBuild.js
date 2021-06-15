@@ -1,8 +1,8 @@
 import React from "react";
-import brand from "../../../Assets/weBuilt_assests/brand.png";
-import website from "../../../Assets/weBuilt_assests/website.png";
-import design from "../../../Assets/weBuilt_assests/design.png";
-import software from "../../../Assets/weBuilt_assests/software.png";
+import brand from "../../../Assets/weBuilt_assets/brand.png";
+import website from "../../../Assets/weBuilt_assets/website.png";
+import design from "../../../Assets/weBuilt_assets/design.png";
+import software from "../../../Assets/weBuilt_assets/software.png";
 
 import WeBuildCard from "../WeBuildCard/WeBuildCard";
 

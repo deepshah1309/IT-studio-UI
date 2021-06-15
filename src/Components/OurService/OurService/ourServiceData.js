@@ -1,13 +1,13 @@
-import website from "../../../Assets/weBuilt_assests/website.png";
-import software from "../../../Assets/weBuilt_assests/software.png";
-import mobile from "../../../Assets/weBuilt_assests/mobile.png";
-import design from "../../../Assets/weBuilt_assests/design.png";
-import artificial from "../../../Assets/weBuilt_assests/brain.png";
-import brand from "../../../Assets/weBuilt_assests/brand.png";
-import camera from "../../../Assets/weBuilt_assests/video-camera.png";
-import content from "../../../Assets/weBuilt_assests/content.png";
-import team from "../../../Assets/weBuilt_assests/teamwork.png";
-import digital from "../../../Assets/weBuilt_assests/youtube.png";
+import website from "../../../Assets/weBuilt_assets/website.png";
+import software from "../../../Assets/weBuilt_assets/software.png";
+import mobile from "../../../Assets/weBuilt_assets/mobile.png";
+import design from "../../../Assets/weBuilt_assets/design.png";
+import artificial from "../../../Assets/weBuilt_assets/brain.png";
+import brand from "../../../Assets/weBuilt_assets/brand.png";
+import camera from "../../../Assets/weBuilt_assets/video-camera.png";
+import content from "../../../Assets/weBuilt_assets/content.png";
+import team from "../../../Assets/weBuilt_assets/teamwork.png";
+import digital from "../../../Assets/weBuilt_assets/youtube.png";
 
 const OurServiceData = [
   {
