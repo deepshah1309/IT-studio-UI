@@ -1,20 +1,35 @@
 .card_box {
-    text-align: center;
-    background-color: white;
-    width: 323px;
-    height: 534px;
-    margin-left: 20px;
-    border-radius: 15px;
-    transition: all linear 0.5s;
-  }
-  .card_box:hover {
-    background-color: #00affa;
-    transition: all linear 0.5s;
+  text-align: center;
+  background-color: white;
+  width: 90%;
+  height: 634px;
+  margin-left: 6px;
+  border-radius: 15px;
+  transition: all linear 0.5s;
+}
+.card_box:hover {
+  background-color: #00affa;
+  transition: all linear 0.5s;
+}
+.card_box h2 {
+  font-size: 43px;
+  height: 120px;
+}
+.card_box img {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .card_box {
+    width: 50%;
+    margin-top: 30px;
+    height: 300px;
   }
   .card_box h2 {
-    font-size: 43px;
-    height: 120px;
+    font-size: 20px;
+    height: 70px;
   }
   .card_box img {
-    width: 50%;
+    width: 59%;
   }
+}

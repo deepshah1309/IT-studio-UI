@@ -1,0 +1,44 @@
+.ourService_card_box {
+  text-align: center;
+  background-color: white;
+  width: 85%;
+  height: 606px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ourService_card_box h2 {
+  width: 50%;
+  font-size: 31px;
+}
+.ourService_card_box img {
+  width: 70%;
+}
+.box1 {
+}
+.box4 {
+}
+
+.box9 {
+  grid-column: 2/3;
+}
+
+@media only screen and (max-width: 768px) {
+  .ourService_card_box {
+    width: 51.5%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .ourService_card_box img {
+    width: 65%;
+  }
+  .ourService_card_box h2 {
+    width: 70%;
+    font-size: 20px;
+  }
+}

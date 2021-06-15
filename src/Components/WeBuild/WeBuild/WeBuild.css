@@ -6,47 +6,26 @@
 .weBuild_header_box h2 {
   text-align: center;
   color: white;
-  font-size: 43px;
+  font-size: 60px;
   padding: 70px 0;
 }
 .weBuild_main_box {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding-left: 60px;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-left: 6px;
 }
-.card_box {
-  text-align: center;
-  background-color: white;
-  width: 323px;
-  height: 534px;
-  margin-left: 20px;
-  border-radius: 15px;
-  transition: all linear 0.5s;
-}
-.card_box:hover {
-  background-color: #00affa;
-  transition: all linear 0.5s;
-}
-.card_box h2 {
-  font-size: 43px;
-  height: 120px;
-}
-.card_box img {
-  width: 50%;
-}
+
 @media only screen and (max-width: 768px) {
   .weBuild_main_box {
     display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
+    grid-template-columns: 100%;
+    justify-items: center;
     padding-left: 0;
   }
-  .card_box {
-    margin-top: 30px;
-    height: 400px;
-  }
-  .card_box h2 {
-    font-size: 28px;
-    height: 100px;
+  .weBuild_header_box h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding: 70px 0;
   }
 }

@@ -1,10 +1,12 @@
 import React from "react";
 import "./Home.css";
-import Header from "./Components/Header/Header";
-import Contact from "./Components/Contact/Contact";
+
 import { Helmet } from "react-helmet";
 import WeBuild from "./Components/WeBuild/WeBuild/WeBuild";
-import Map from "./Components/Contact/Map";
+import Header from "./Components/Header/Header";
+import OurService from "./Components/OurService/OurService/OurService";
+
+import Contact from "./Components/Contact/Contact";
 
 const Home = () => {
   return (
@@ -19,6 +21,9 @@ const Home = () => {
       </Helmet>
       <Header />
       <WeBuild />
+
+      <OurService />
+
       <Contact />
     </div>
   );
