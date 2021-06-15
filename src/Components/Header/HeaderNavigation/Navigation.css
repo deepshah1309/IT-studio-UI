@@ -19,6 +19,9 @@
 .nav-hamburger {
   display: none;
 }
+.showDrawer{
+    display:none;
+}
 @media only screen and (max-width: 768px) {
   .Navigation {
     display: grid;
@@ -27,14 +30,40 @@
     background-color: white;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: "logo menus";
-    /* grid-template-areas: "logo" "menus"; */
+    grid-template-columns:50% 50%;
+   
+    grid-template-areas: "logo menus";
   }
   .part2 {
-    display: none;
+   visibility:hidden;
+
+   top:0;
+   height:0px;
+
   }
   .nav-hamburger {
+      display: block;
     grid-area: menus;
+    height:100%;
+    
   }
+    .nav-hamburger img{
+ 
+    width:5%;
+    float:right;
+    padding-right: 3rem;
+    } 
+   .showDrawer{
+        
+        width:70vw;
+        position:fixed;
+        top: 0;
+        
+        left:0;
+        display: block;
+        z-index:1000;
+        height:100%;
+        visibility: visible;
+        background-color: white;
+    }
 }
