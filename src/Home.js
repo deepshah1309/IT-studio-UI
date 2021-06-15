@@ -4,15 +4,10 @@ import "./Home.css";
 import { Helmet } from "react-helmet";
 import WeBuild from "./Components/WeBuild/WeBuild/WeBuild";
 import Header from "./Components/Header/Header";
-<<<<<<< HEAD
 import OurService from "./Components/OurService/OurService/OurService";
-=======
-import Contact from "./Components/Contact/Contact";
-import { Helmet } from "react-helmet";
-import WeBuild from "./Components/WeBuild/WeBuild/WeBuild";
-import Map from "./Components/Contact/Map";
 
->>>>>>> master
+import Contact from "./Components/Contact/Contact";
+
 const Home = () => {
   return (
     <div className="Home">
@@ -26,11 +21,10 @@ const Home = () => {
       </Helmet>
       <Header />
       <WeBuild />
-<<<<<<< HEAD
+
       <OurService />
-=======
+
       <Contact />
->>>>>>> master
     </div>
   );
 };
