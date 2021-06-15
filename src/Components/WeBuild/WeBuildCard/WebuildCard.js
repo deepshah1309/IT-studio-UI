@@ -1,7 +1,7 @@
 import React from "react";
 import "./WeBuildCard.css";
 
-const WebuildCard = (props) => {
+const WeBuildCard = (props) => {
   const { tittle, icon } = props.data;
   console.log(icon);
   return (
@@ -12,4 +12,4 @@ const WebuildCard = (props) => {
   );
 };
 
-export default WebuildCard;
+export default WeBuildCard;
