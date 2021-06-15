@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 
 import { Helmet } from "react-helmet";
-import WeBuild from "./Components/WeBuild/WeBuild/WeBuild";
+import WeBuildSection from "./Components/WeBuildSection/WeBuildSection/WeBuildSection";
 import Header from "./Components/Header/Header";
 import OurService from "./Components/OurService/OurService/OurService";
 
@@ -20,7 +20,7 @@ const Home = () => {
         <title>Home-IT Studio</title>
       </Helmet>
       <Header />
-      <WeBuild />
+      <WeBuildSection />
 
       <OurService />
 

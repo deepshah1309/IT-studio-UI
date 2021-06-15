@@ -1,0 +1,31 @@
+.weBuild_container {
+  background-color: #161a37;
+  width: 100%;
+  padding-bottom: 80px;
+}
+.weBuild_header_box h2 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  padding: 70px 0;
+}
+.weBuild_main_box {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-left: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+  .weBuild_main_box {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    padding-left: 0;
+  }
+  .weBuild_header_box h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding: 70px 0;
+  }
+}

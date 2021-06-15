@@ -1,0 +1,39 @@
+.card_box_section {
+  text-align: center;
+  background-color: white;
+  max-width: 88.5%;
+  height: 634px;
+  margin-left: 6px;
+  border-radius: 15px;
+  transition: all linear 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card_box_section:hover {
+  background-color: #00affa;
+  transition: all linear 0.5s;
+}
+.card_box_section h2 {
+  font-size: 45px;
+  height: 160px;
+}
+.card_box_section img {
+  max-width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .card_box_section {
+    max-width: 50%;
+    margin-top: 30px;
+    height: 300px;
+  }
+  .card_box_section h2 {
+    font-size: 20px;
+    height: 62px;
+  }
+
+  .card_box_section img {
+    max-width: 75%;
+  }
+}
