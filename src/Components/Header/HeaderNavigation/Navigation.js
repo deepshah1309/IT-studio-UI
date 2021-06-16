@@ -33,7 +33,7 @@ const Navigation=()=>{
                
                 <div  className="part2" id="menusnav">
                     
-                    <Menu setOpen={openMenu}/>
+                    <Menu open={OpenMenu} setOpen={setOpenMenu}/>
                 </div>
                
         </div>
