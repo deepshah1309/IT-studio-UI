@@ -1,5 +1,6 @@
 .ourService_card_box {
-  text-align: center;
+  position: relative;
+
   background-color: white;
   width: 85%;
   height: 606px;
@@ -10,13 +11,44 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 10px 10px 5px lightgrey;
 }
-.ourService_card_box h2 {
+.our_service_content_box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.our_service_content_box h2 {
   width: 50%;
   font-size: 31px;
 }
-.ourService_card_box img {
+.our_service_content_box img {
   width: 70%;
+}
+.card_box_section_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3592cc;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(0);
+  transition: all linear 0.5s;
+}
+.card_box_section_overlay p {
+  text-align: center;
+  font-size: 31px;
+  width: 90%;
+}
+.ourService_card_box:hover .card_box_section_overlay {
+  transform: scaleX(1);
+  transition: all linear 0.5s;
 }
 .box1 {
 }
@@ -34,10 +66,10 @@
     margin-bottom: 20px;
     margin-left: 10px;
   }
-  .ourService_card_box img {
+  .ourService_card_box .our_service_content_box img {
     width: 65%;
   }
-  .ourService_card_box h2 {
+  .ourService_card_box .our_service_content_box h2 {
     width: 70%;
     font-size: 20px;
   }
