@@ -7,7 +7,7 @@ import Header from "./Components/Header/Header";
 import OurService from "./Components/OurService/OurService/OurService";
 
 import Contact from "./Components/Contact/Contact";
-
+import Footer from "./Components/Footer/Footer";
 const Home = () => {
   return (
     <div className="Home">
@@ -25,6 +25,7 @@ const Home = () => {
       <OurService />
 
       <Contact />
+      <Footer/>
     </div>
   );
 };
