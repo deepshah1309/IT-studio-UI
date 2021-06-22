@@ -1,12 +1,13 @@
 .Heading{
     overflow-x: hidden;
     display:grid;
-    width:100%;
+    width:120%;
     max-width:100vw;
     height:auto;
-  
+    z-index:0;
     grid-template-columns:40% 60%;
     grid-template-areas: "textpart imagepart";
+    margin-bottom:-3.2rem;
 }
 .bigcircle{
     position:absolute;
@@ -27,13 +28,16 @@
         width:100%;
         min-height:100vh;
         height:auto;
+        z-index:-8;
         
+        background-color: #F0FFFF;
        
 }
 .imagepart{
     grid-area:imagepart;
     
     /* height:1200px; */
+    background-color: #F0FFFF;
    background-image:url("../../Assets/over.svg");
     margin-top:-9rem;
     background-size:120%;

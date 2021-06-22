@@ -1,6 +1,7 @@
 .weBuild_container {
   background-color: #161a37;
   width: 100%;
+  padding-top: 0;
   padding-bottom: 80px;
 }
 .weBuild_header_box h2 {
