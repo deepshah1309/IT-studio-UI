@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import WeBuildSection from "./Components/WeBuildSection/WeBuildSection/WeBuildSection";
 import Header from "./Components/Header/Header";
 import OurService from "./Components/OurService/OurService/OurService";
+import BrandWeWork from "./Components/BrandWeWork/BrandWeWork/BrandWeWork";
 
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
@@ -23,9 +24,10 @@ const Home = () => {
       <WeBuildSection />
 
       <OurService />
+      <BrandWeWork />
 
       <Contact />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

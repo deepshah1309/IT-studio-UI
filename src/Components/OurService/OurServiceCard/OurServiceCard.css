@@ -43,7 +43,7 @@
 }
 .card_box_section_overlay p {
   text-align: center;
-  font-size: 31px;
+  font-size: 28px;
   width: 90%;
 }
 .ourService_card_box:hover .card_box_section_overlay {
@@ -71,6 +71,9 @@
   }
   .ourService_card_box .our_service_content_box h2 {
     width: 70%;
+    font-size: 20px;
+  }
+  .card_box_section_overlay p {
     font-size: 20px;
   }
 }

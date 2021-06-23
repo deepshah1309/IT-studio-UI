@@ -1,0 +1,35 @@
+.brand_we_work_main_box {
+  background-color: #161a37;
+  padding-top: 60px;
+}
+.brand_we_work_contain {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brand_we_work_contain h2 {
+  font-size: 60px;
+  padding-top: 150px;
+}
+.brand_we_work_contain p {
+  font-size: 20px;
+  width: 22%;
+}
+/* /////////////////////////////////////////// */
+svg {
+  width: 326px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.brand_hexagon_box {
+  display: flex;
+}
+.box2_hexagon {
+  margin-top: 139px;
+  margin-left: -45px;
+}
