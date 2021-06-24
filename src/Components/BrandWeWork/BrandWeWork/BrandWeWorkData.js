@@ -6,22 +6,14 @@ import company3 from "../../../Assets/brand_we_build_assets/Polygon 107.png";
 const brandWeBuild = [
   {
     id: 1,
-    brand: company,
+    brand1: company,
+    brand2: company1,
     name: "",
   },
   {
     id: 2,
-    brand: company1,
-    name: "",
-  },
-  {
-    id: 3,
-    brand: company2,
-    name: "",
-  },
-  {
-    id: 4,
-    brand: company3,
+    brand1: company2,
+    brand2: company3,
     name: "",
   },
 ];
