@@ -25,11 +25,14 @@ svg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: linear all 0.5s;
+}
+svg:hover {
+  transform: scale(1.2, 1.2);
+  transition: linear all 0.5s;
 }
 .brand_hexagon_box {
   display: flex;
-}
-.box2_hexagon {
-  margin-top: 139px;
-  margin-left: -45px;
+  padding-top: 115px;
+  overflow-y: scroll;
 }
