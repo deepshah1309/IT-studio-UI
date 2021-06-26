@@ -15,8 +15,8 @@ const BrandWeWork = () => {
       </div>
       <div>
         <div className="brand_hexagon_box">
-          {data.map((logo) => (
-            <BrandWeWorkCard logo={logo} key={logo.id} />
+          {data.map((logo, i) => (
+            <BrandWeWorkCard logo={logo} i={i} key={logo.id} />
           ))}
         </div>
       </div>

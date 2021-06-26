@@ -8,20 +8,32 @@ import company5 from "../../../Assets/brand_we_build_assets/Polygon 1042.png";
 const brandWeBuild = [
   {
     id: 1,
-    brand1: company,
-    brand2: company1,
+    brand: company,
     name: "",
   },
   {
     id: 2,
-    brand1: company2,
-    brand2: company3,
+    brand: company1,
     name: "",
   },
   {
     id: 3,
-    brand1: company4,
-    brand2: company5,
+    brand: company2,
+    name: "",
+  },
+  {
+    id: 4,
+    brand: company3,
+    name: "",
+  },
+  {
+    id: 5,
+    brand: company4,
+    name: "",
+  },
+  {
+    id: 6,
+    brand: company5,
     name: "",
   },
 ];
