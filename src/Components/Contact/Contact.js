@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import Map from "./Map";
+import Map from "./Maps";
 import Email from "./envelope.svg";
 import Address from "./map.svg";
 import Call from "./smartphone.svg";
@@ -9,8 +9,26 @@ import Instagram from "../../Assets/instagram.svg";
 import Facebook from "../../Assets/facebook.svg";
 import Twitter from "../../Assets/twitter.svg";
 import LinkedIn from "../../Assets/linkedin.svg";
+import {
+  GoogleMap,
+  Marker,
+  withScriptjs,
+  withGoogleMap,
+} from "react-google-maps";
+
+import mapStyles from "./mapStyles";
 
 function Contact() {
+  const MyMapComponent = withScriptjs(
+    withGoogleMap((props) => (
+      <GoogleMap defaultZoom={8} defaultCenter={{ lat: -34.397, lng: 150.644 }}>
+        {props.isMarkerShown && (
+          <Marker position={{ lat: -34.397, lng: 150.644 }} />
+        )}
+      </GoogleMap>
+    ))
+  );
+
   return (
     <div className="contact-main">
       <div className="contact-header">My Contact Page</div>
@@ -34,13 +52,25 @@ function Contact() {
               name="text-area"
               placeholder="Enter Text here ..."
               className="form-textarea inp"
-              r
             ></textarea>
             <button className="form-btn">Send</button>
           </form>
         </div>
         <div className="contact-map">
-          <Map />
+          <MyMapComponent
+            isMarkerShown
+            googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={
+              <div
+                style={{
+                  height: `360px`,
+                  borderRadius: `15%`,
+                }}
+              />
+            }
+            mapElement={<div style={{ height: `100%` }} />}
+          />
         </div>
       </div>
 
@@ -50,7 +80,7 @@ function Contact() {
           <div>
             <div className="info-text">
               <div className="info-header">Address</div>
-              <div>
+              <div className="info-t">
                 115 Salasar Vatika 9th,Nangal
                 Road,Jhotwara,Jaipur,Rajasthan,India-302012
               </div>
@@ -59,14 +89,14 @@ function Contact() {
         </div>
         <div className="info">
           <img src={Call} className="info-svg" />
-          <div>
+          <div className="info-arr">
             <div className="info-header">Call For Updates</div>
             <div>+91-9413666423</div>
           </div>
         </div>
         <div className="info">
           <img src={Email} className="info-svg" />
-          <div>
+          <div className="info-arr">
             <div className="info-header">Email Us</div>
             <div>
               TheITstudio@redpositive.in <br />
