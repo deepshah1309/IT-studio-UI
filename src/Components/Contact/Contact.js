@@ -21,9 +21,14 @@ import mapStyles from "./mapStyles";
 function Contact() {
   const MyMapComponent = withScriptjs(
     withGoogleMap((props) => (
-      <GoogleMap defaultZoom={8} defaultCenter={{ lat: -34.397, lng: 150.644 }}>
+      <GoogleMap
+        defaultZoom={8}
+        defaultCenter={{ lat: 26.98879295673546, lng: 75.78092062320722 }}
+      >
         {props.isMarkerShown && (
-          <Marker position={{ lat: -34.397, lng: 150.644 }} />
+          <Marker
+            position={{ lat: 26.98879295673546, lng: 75.78092062320722 }}
+          />
         )}
       </GoogleMap>
     ))
@@ -57,6 +62,7 @@ function Contact() {
           </form>
         </div>
         <div className="contact-map">
+          <div className="back"></div>
           <MyMapComponent
             isMarkerShown
             googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
@@ -66,7 +72,9 @@ function Contact() {
                 style={{
                   height: `360px`,
                   borderRadius: `15%`,
+                  // opacity: "0.6",
                 }}
+                className="map"
               />
             }
             mapElement={<div style={{ height: `100%` }} />}
