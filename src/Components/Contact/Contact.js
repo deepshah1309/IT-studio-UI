@@ -36,33 +36,35 @@ function Contact() {
 
   return (
     <div className="contact-main">
-      <div className="contact-header">My Contact Page</div>
+      <div className="contact-header">Contact Us</div>
       <div className="contact">
         <div className="contact-middle">
-          Get In Touch
-          <form className="contact-form">
-            <input
-              type="text"
-              name="form-name"
-              className="form-name inp"
-              placeholder="Enter your Name ..."
-            />
-            <input
-              type="email"
-              name="form-email"
-              className="form-email inp"
-              placeholder="Enter your Email ..."
-            />
-            <textarea
-              name="text-area"
-              placeholder="Enter Text here ..."
-              className="form-textarea inp"
-            ></textarea>
-            <button className="form-btn">Send</button>
-          </form>
+          <div className="contact-center">
+            <div className="contact-text">Get In Touch</div>
+            <div className="contact-bottom">Feel free to drop a line below</div>
+            <form className="contact-form">
+              <input
+                type="text"
+                name="form-name"
+                className="form-name inp"
+                placeholder="Enter your Name ..."
+              />
+              <input
+                type="email"
+                name="form-email"
+                className="form-email inp"
+                placeholder="Enter your Email ..."
+              />
+              <textarea
+                name="text-area"
+                placeholder="Enter Text here ..."
+                className="form-textarea inp"
+              ></textarea>
+              <button className="form-btn">Send</button>
+            </form>
+          </div>
         </div>
         <div className="contact-map">
-          <div className="back"></div>
           <MyMapComponent
             isMarkerShown
             googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
@@ -70,8 +72,7 @@ function Contact() {
             containerElement={
               <div
                 style={{
-                  height: `360px`,
-                  borderRadius: `15%`,
+                  
                   // opacity: "0.6",
                 }}
                 className="map"
