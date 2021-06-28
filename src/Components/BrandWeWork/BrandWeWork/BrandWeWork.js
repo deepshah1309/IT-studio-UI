@@ -1,8 +1,7 @@
 import React from "react";
 import "./BrandWeWork.css";
-import Hexagon from "react-hexagon";
-import shadow from "../../../Assets/brand_we_build_assets/Polygon 119.png";
-import company from "../../../Assets/brand_we_build_assets/Polygon 109.png";
+import data from "./BrandWeWorkData";
+import BrandWeWorkCard from "../BrandWeWorkCard/BrandWeWorkCard";
 
 const BrandWeWork = () => {
   return (
@@ -16,30 +15,9 @@ const BrandWeWork = () => {
       </div>
       <div>
         <div className="brand_hexagon_box">
-          <div className="box1_hexagon">
-            <div>
-              <Hexagon
-                flatTop
-                style={{ stroke: "" }}
-                backgroundImage={company}
-              />
-            </div>
-            <div>
-              <img src={shadow} alt="" />
-            </div>
-          </div>
-          <div className="box2_hexagon">
-            <div>
-              <Hexagon
-                flatTop
-                style={{ stroke: "" }}
-                backgroundImage={company}
-              />
-            </div>
-            <div>
-              <img src={shadow} alt="" />
-            </div>
-          </div>
+          {data.map((logo) => (
+            <BrandWeWorkCard logo={logo} key={logo.id} />
+          ))}
         </div>
       </div>
     </section>
