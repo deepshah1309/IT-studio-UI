@@ -20,6 +20,7 @@ const brandWeBuild = [
     id: 3,
     brand: company2,
     name: "",
+    className: "box1_bww",
   },
   {
     id: 4,
@@ -30,6 +31,7 @@ const brandWeBuild = [
     id: 5,
     brand: company4,
     name: "",
+    className: "box1_bww",
   },
   {
     id: 6,
