@@ -8,8 +8,10 @@
   font-weight: bold;
 }
 .closeIcon{
-
   display: none;
+}
+.Heading_title_itstudio{
+  display:none;
 }
 @media only screen and (max-width: 768px) {
 
@@ -21,6 +23,17 @@
     width:70vw;
     grid-template-rows: auto;
   }
+.Heading_title_itstudio{
+  display: block;
+  font-size:3rem;
+  text-align:center;
+}
+.item {
+  color: #082265;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
   .closeIcon{
     display:grid;
     color:white;
