@@ -1,5 +1,6 @@
 .ourService_container {
   background-color: #f0ffff;
+  padding-bottom: 100px;
 }
 .ourService_card_main_box {
   display: flex;
