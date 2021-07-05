@@ -5,7 +5,7 @@ const BrandWeWorkSmallCard = (props) => {
   const { brand } = props.logo;
 
   return (
-    <div>
+    <div style={{ marginRight: "15px" }}>
       <Hexagon
         flatTop
         style={{ stroke: "" }}

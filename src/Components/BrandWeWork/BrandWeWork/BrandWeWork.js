@@ -19,7 +19,7 @@ const BrandWeWork = () => {
     window.addEventListener("resize", handleWindowSizeChange);
   }, []);
 
-  console.log(mobileView);
+  let isTrue = mobileView.width <= 768;
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -52,35 +52,34 @@ const BrandWeWork = () => {
             <BrandWeWorkCard logo={logo} i={i} key={logo.id} />
           ))}
         </div>
-        <div className="brand_hexagon_box_small">
-          <div className="small_box_1">
-            <img src={polygon} alt="" />
-          </div>
-          <div className="small_box_2">
-            <img src={polygon} alt="" />
-          </div>
-          <div className="small_box_3">
-            <img src={polygon2} alt="" />
-          </div>
-          <div className="small_box_4">
-            <img src={polygon2} alt="" />
-          </div>
-          <div className="small_box_5">
-            <img src={polygon3} alt="" />
-          </div>
-          <div className="small_box_6">
-            <img src={polygon3} alt="" />
-          </div>
-          {mobileView <= 768 && (
-            <div className="small_box_7">
-              <Carousel responsive={responsive}>
-                {data.map((logo, i) => (
-                  <BrandWeWorkSmallCard logo={logo} i={i} key={logo.id} />
-                ))}
-              </Carousel>
+
+        {isTrue && (
+          <div className="brand_hexagon_box_small">
+            <div className="small_box_1">
+              <img src={polygon} alt="" />
             </div>
-          )}
-        </div>
+            <div className="small_box_2">
+              <img src={polygon} alt="" />
+            </div>
+            <div className="small_box_3">
+              <img src={polygon2} alt="" />
+            </div>
+            <div className="small_box_4">
+              <img src={polygon2} alt="" />
+            </div>
+            <div className="small_box_5">
+              <img src={polygon3} alt="" />
+            </div>
+            <div className="small_box_6">
+              <img src={polygon3} alt="" />
+            </div>
+            <div className="small_box_7">
+              {data.map((logo, i) => (
+                <BrandWeWorkSmallCard logo={logo} i={i} key={logo.id} />
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
