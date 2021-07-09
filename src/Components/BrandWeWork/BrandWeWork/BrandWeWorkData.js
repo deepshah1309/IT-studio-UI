@@ -38,6 +38,17 @@ const brandWeBuild = [
     brand: company5,
     name: "",
   },
+  {
+    id: 7,
+    brand: company4,
+    name: "",
+    className: "box1_bww",
+  },
+  {
+    id: 8,
+    brand: company5,
+    name: "",
+  },
 ];
 
 export default brandWeBuild;

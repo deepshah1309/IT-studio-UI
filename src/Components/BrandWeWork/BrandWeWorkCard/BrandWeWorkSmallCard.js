@@ -8,7 +8,7 @@ const BrandWeWorkSmallCard = (props) => {
     <div style={{ marginRight: "15px" }}>
       <Hexagon
         flatTop
-        style={{ stroke: "" }}
+        style={{ stroke: "white", strokeWidth: "33", strokeLinejoin: "round" }}
         backgroundImage={brand}
         backgroundScale={1.12}
       />

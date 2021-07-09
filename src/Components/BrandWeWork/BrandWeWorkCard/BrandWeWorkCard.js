@@ -14,7 +14,11 @@ const BrandWeWorkCard = (props) => {
           <div>
             <Hexagon
               flatTop
-              style={{ stroke: "" }}
+              style={{
+                stroke: "white",
+                strokeWidth: "35",
+                strokeLinejoin: "round",
+              }}
               backgroundImage={brand}
               backgroundScale={1.12}
             />
@@ -28,7 +32,11 @@ const BrandWeWorkCard = (props) => {
           <div>
             <Hexagon
               flatTop
-              style={{ stroke: "" }}
+              style={{
+                stroke: "white",
+                strokeWidth: "35",
+                strokeLinejoin: "round",
+              }}
               backgroundImage={brand}
               backgroundScale={1.12}
             />
