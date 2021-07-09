@@ -21,9 +21,14 @@ import mapStyles from "./mapStyles";
 function Contact() {
   const MyMapComponent = withScriptjs(
     withGoogleMap((props) => (
-      <GoogleMap defaultZoom={8} defaultCenter={{ lat: -34.397, lng: 150.644 }}>
+      <GoogleMap
+        defaultZoom={8}
+        defaultCenter={{ lat: 26.98879295673546, lng: 75.78092062320722 }}
+      >
         {props.isMarkerShown && (
-          <Marker position={{ lat: -34.397, lng: 150.644 }} />
+          <Marker
+            position={{ lat: 26.98879295673546, lng: 75.78092062320722 }}
+          />
         )}
       </GoogleMap>
     ))
@@ -31,30 +36,33 @@ function Contact() {
 
   return (
     <div className="contact-main">
-      <div className="contact-header">My Contact Page</div>
+      <div className="contact-header">Contact Us</div>
       <div className="contact">
         <div className="contact-middle">
-          Get In Touch
-          <form className="contact-form">
-            <input
-              type="text"
-              name="form-name"
-              className="form-name inp"
-              placeholder="Enter your Name ..."
-            />
-            <input
-              type="email"
-              name="form-email"
-              className="form-email inp"
-              placeholder="Enter your Email ..."
-            />
-            <textarea
-              name="text-area"
-              placeholder="Enter Text here ..."
-              className="form-textarea inp"
-            ></textarea>
-            <button className="form-btn">Send</button>
-          </form>
+          <div className="contact-center">
+            <div className="contact-text">Get In Touch</div>
+            <div className="contact-bottom">Feel free to drop a line below</div>
+            <form className="contact-form">
+              <input
+                type="text"
+                name="form-name"
+                className="form-name inp"
+                placeholder="Enter your Name ..."
+              />
+              <input
+                type="email"
+                name="form-email"
+                className="form-email inp"
+                placeholder="Enter your Email ..."
+              />
+              <textarea
+                name="text-area"
+                placeholder="Enter Text here ..."
+                className="form-textarea inp"
+              ></textarea>
+              <button className="form-btn">Send</button>
+            </form>
+          </div>
         </div>
         <div className="contact-map">
           <MyMapComponent
@@ -64,9 +72,10 @@ function Contact() {
             containerElement={
               <div
                 style={{
-                  height: `360px`,
-                  borderRadius: `15%`,
+                  
+                  // opacity: "0.6",
                 }}
+                className="map"
               />
             }
             mapElement={<div style={{ height: `100%` }} />}
