@@ -88,7 +88,7 @@
 }
 .content .typingtext{
     font-weight:bolder;
-    font-size:4.5rem;
+    font-size:3.9rem;
     margin-right:-20rem;
     
     margin-top:-3rem;
@@ -168,14 +168,11 @@ font-size:1.4rem;
     .rectanglepart{
    
         position: absolute;
-          /* margin-top:-3rem;
-          margin-left: 6rem;
-          padding-left:8rem;
-          margin-bottom:4rem; */
+         
           height:30px;
           width:90px;
           z-index:-2;
-          margin-left:80%;
+          margin-left:66%;
           background-color: #5aabf0;
       }
     .content .typingtext{
@@ -189,6 +186,12 @@ font-size:1.4rem;
     .textcontent{
         margin-top:0;
         padding-top: 0;
+    
+            /* margin-top: 0; */
+            /* padding-top: 0; */
+            margin-top: -10rem;
+            z-index: 2000;
+    
     }
     .imagepart{
         grid-area:imagepart;
@@ -238,6 +241,12 @@ font-size:1.4rem;
     .bigcircle{
         height:20%;
         left:2.3%;
+       
+            position: absolute;
+            z-index: -5;
+            margin-top: -4rem;
+            margin-left: -4rem;
+     
 
         /* padding-top:5%; */
 
