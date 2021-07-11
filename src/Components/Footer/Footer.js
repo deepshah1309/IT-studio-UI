@@ -10,13 +10,13 @@ const Footer=()=>{
                             <div className="infoFooter">
                                 <div className="footer_titles_head">IT STUDIO</div>
                                 <div className="footer_item">
+                                    <p>
                                     115,salasar vatika,9Th
-                                    <br></br>
                                     Nangal road
-                                    <br></br>
                                     Jhotwara,Jaipur,Rajasthan,
-                                    <br></br>
                                     India-302012
+                                    </p>
+                                   
                                 </div>
                             </div>
                             <div className="Sitemap">
@@ -43,10 +43,10 @@ const Footer=()=>{
                     <div className="copyrightandmedia">
                             <div className="copyrightstatement">Copyright@ 2020 Theitstudio,  All Right Reserved By Redpositive Service OPC Pvt.Ltd</div>
                             <div className="social_flex">
-                                <div><img src={LinkedIn} height="45" width="45" className="imageinsocialflex"/></div>
-                                <div><img src={Instagram} heoight="45" width="45" className="imageinsocialflex"/></div>
-                                <div><img src={FaceBook} height="45" width="45" className="imageinsocialflex"/></div>
-                                <div><img src={Twitter} height="45" width="45" className="imageinsocialflex"/></div>
+                                <div><img src={LinkedIn}  className="imageinsocialflex"/></div>
+                                <div><img src={Instagram} className="imageinsocialflex"/></div>
+                                <div><img src={FaceBook}  className="imageinsocialflex"/></div>
+                                <div><img src={Twitter}  className="imageinsocialflex"/></div>
                                 
                             </div>
                     </div>

@@ -1,4 +1,5 @@
 import "./HeaderNavigationMenu.css";
+import Logo from "../../Components/Header/HeaderLogo";
 const Menu=({open,setOpen})=>{
     const v=()=>{
         setOpen(false);
@@ -21,6 +22,7 @@ const Menu=({open,setOpen})=>{
     return (
         <div className="MenuNavigation">
             <div className="closeIcon"><div></div><div onClick={v}>X</div></div>
+            <div className="Heading_title_itstudio"><Logo/></div>
              <div    className="item">About Us</div>
             <div    className="item">Contact Us</div>
             <div    className="item">Our Work</div>
