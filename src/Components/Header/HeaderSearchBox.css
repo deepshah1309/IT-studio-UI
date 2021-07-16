@@ -1,42 +1,61 @@
-.roundit {
-  border-radius: 15px;
-  margin-top: 1rem;
-  width: 80%;
 
-  display: grid;
-  grid-template-columns: 90% 20%;
-  grid-template-areas: "textinput icon";
-}
 .part1search {
   grid-area: "textinput";
-  height: 100%;
+  height:85%;
   width: 100%;
 }
 .part1search input {
   width: 100%;
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
+  border-top-left-radius:25px;
+  border-bottom-left-radius:25px;
   outline-style: none;
-  height: 80%;
+ 
+  height: 82%;
+  padding-left:20px;
   font-size: 1.2rem;
 }
 .part2search {
   grid-area: "icon";
   width: 60%;
-  height: 100%;
+  height:85%;
+  
   margin-left: -1rem;
+}
+.roundit {
+  border-radius: 15px;
+  margin-top: 1rem;
+  width: 70%;
+  /* margin: 1rem auto; */
+  height: 80%;
+  display: grid;
+  grid-template-columns: 90% 20%;
+  grid-template-areas: "textinput icon";
 }
 .part2search img {
   height: 94%;
 
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 @media only screen and (max-width: 768px) {
   .part1search {
     height: 60%;
     width: 100%;
+
+  }
+  .roundit {
+    border-radius: 15px;
+    margin-top: 1rem;
+    width: 104%;
+    margin: 1rem auto;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 90% 20%;
+    grid-template-areas: "textinput icon";
+}
+  .part1search input{
+    font-size:0.9rem;
   }
   .part2search {
     grid-area: "icon";
@@ -47,7 +66,7 @@
   .part2search img {
     height: 94%;
 
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 }

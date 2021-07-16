@@ -13,6 +13,8 @@ const Heading=()=>{
         <div className="Heading">
                 <div className="textcontent">
                         <div className="content">
+
+                            {/** This upperText is circular section in upside of typing text */}
                         <div className="UpperText">
                         
                         --Best service
@@ -20,13 +22,16 @@ const Heading=()=>{
                         </div>
                     
                         <div className="typingtext">
+
+                            {/** This typing text gets rectangle in it's right side with overlaping to Image in desktop view */}
                         <div className="rectanglepart"><Rectangle/></div>
                         <Typewriter
                           
                           options={{
-                              strings: ["Perfect place to have optimized IT products"],
+                              strings: ["Perfect place for your Optimized IT products"],
                               autoStart: true,
                               loop: true,
+                              wrapperClassName:"typings"
                           }}
                       />
                           
@@ -43,8 +48,10 @@ const Heading=()=>{
                         </div>
                        
                 </div>
-                <div className="imagepart" >
+                <div className="imagepart">
                 </div>
+              
+
         </div>
     )
 }

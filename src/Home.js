@@ -6,7 +6,6 @@ import WeBuildSection from "./Components/WeBuildSection/WeBuildSection/WeBuildSe
 import Header from "./Components/Header/Header";
 import OurService from "./Components/OurService/OurService/OurService";
 import BrandWeWork from "./Components/BrandWeWork/BrandWeWork/BrandWeWork";
-
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import TestiMonials from "./Components/TestiMonials/TestiMonials";
@@ -28,7 +27,7 @@ const Home = () => {
       <BrandWeWork />
       <TestiMonials/>
 
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

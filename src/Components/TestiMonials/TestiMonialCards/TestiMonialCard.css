@@ -94,18 +94,14 @@
   width:80%;
   margin-left: 57px;
   right:70px;
-   
  border-top-left-radius:20%;
  border-bottom-right-radius:60%;
  border-bottom-left-radius:22%;
- 
-
-
 }
 .back_test{
   position:absolute;
  display:block;
- opacity:0.6;
+ opacity:0.8;
  height:100%;
  
  border-top-left-radius:20%;
@@ -134,22 +130,7 @@
   border-bottom-left-radius:25%;
   object-fit:cover;
 }
-/* .test_image{
- margin: 0 10%;
-  height:120%;
-  
- 
-  background-position:left 10% top -20%;
 
-background-blend-mode:multiply;
-  filter:opacity(0.3);
-  background-size:cover;
-  background-repeat: no-repeat;
-  border-top-left-radius:20%;
-  border-bottom-right-radius:50%;
-  border-bottom-left-radius:15%;
-  z-index:90;
-} */
 .testimonials_contentpart{
   text-align:center;
   padding:4% 19%;
@@ -177,8 +158,8 @@ background-blend-mode:multiply;
   width:50px;
 }
 .testimonialcontent_text{
-  font-weight:bolder;
-  font-size:1rem;
+  
+  font-size:21px;
   margin-top:6%;
 }
 .testimonial_imagepart_mobileView{
@@ -201,9 +182,23 @@ background-blend-mode:multiply;
           margin-top:2%;
           padding:2% 5%;
   }
-  .testimonials_contentpart{
-    /* background-color: #161A37; */
-
+  .testimonials_contentpart {
+    text-align: center;
+    padding: 1% 0%;
+  }
+  
+}
+@media screen and  (max-width:390px){
+  .testimonialcontent_text{
+    font-size:0.7rem;
+  }
+  .testimonialcard{
+    margin:5% 18%;
+    display:grid;
+    grid-template-columns:100%;
+  margin-bottom:10%;
+  border-radius:20px;
+  box-shadow: 10px 10px 5px lightgrey;
   }
 }
 @media screen and  (max-width:850px){
@@ -211,8 +206,8 @@ background-blend-mode:multiply;
     display:none;
   }
   .testimonialcontent_text{
-    font-weight:bolder;
-    font-size:1rem;
+    /* font-weight:bolder; */
+    font-size:0.8rem;
     margin-top:6%;
   }
   .left_arrow_test{
@@ -269,8 +264,8 @@ border-top-right-radius: 50%;
   .back_test img {
     left: 0;
     position: absolute;
-    height: 84%;
-    width: 110%;
+    height: 81%;
+    width: 108%;
     /* margin-top: 9%; */
     margin: 14% 2% -40% 0;
     transform: scaleY(1.2);
@@ -353,7 +348,7 @@ border-top-right-radius: 50%;
   background-color: #393C4F;
   mix-blend-mode: multiply;
   opacity: 0.8;
-  height: 80%;
+  height: 96%;
   width: 80%;
   margin-left: 57px;
   right: 70px;
@@ -374,19 +369,19 @@ border-top-right-radius: 50%;
 .back_test img {
   left: 0;
   position: absolute;
-  height: 66%;
-  width: 102%;
+  height:80%;
+  width:99%;
   margin-top: 9%;
   /* margin: 4% 2% -1% 0; */
   transform: scaleY(1.2);
   opacity: 0.3;
-
   border-top-left-radius: 20%;
   right: 10%;
   border-bottom-right-radius: 63%;
   border-bottom-left-radius: 25%;
   object-fit: cover;
 }
+
 .firstcircle {
   position: absolute;
   left: 5%;
@@ -400,7 +395,7 @@ border-top-right-radius: 50%;
 .fourthcircle {
   position: absolute;
   right: 25%;
-  bottom: 3%;
+  bottom: -4%;
   z-index: 300;
   opacity: 1;
   height: 30%;

@@ -11,6 +11,7 @@ const Navigation=()=>{
         makeIt(OpenMenu);
        
     }
+    //Menu drawer Open and close Logic Implementation
     let makeIt=(check)=>{
         if(check){
             const elements=document.getElementById("menusnav");
@@ -27,7 +28,9 @@ const Navigation=()=>{
     }
     
     return (
+        
         <div className="Navigation">
+            {/**2 block grid(Logo and menu) */}
                 <div className="part1"><Logo/></div>
                 <div className="nav-hamburger" ><img src={MenuIcon} alt="hmb"  onClick={openMenu}></img></div>
                

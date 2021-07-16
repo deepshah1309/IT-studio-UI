@@ -4,27 +4,15 @@ import Background from "../../../Assets/Testimonial_assets/peopleblock.svg";
 import RightArrow from "../../../Assets/Testimonial_assets/RightArrow.svg";
 import Quote from "../../../Assets/Testimonial_assets/quote.png";
 import LeftArrow from "../../../Assets/Testimonial_assets/leftarrow.jpeg";
-// import Image2 from "../../../Assets/Testimonial_assets/image2.svg";
+
 const TestiMonialCards=({step,setStep,data})=>{
-  console.log(data);
-  console.log(data[step]);
-  console.log(data[step].images.image1);
-  console.log(data.length);
-  console.log(step+1);
-  var element=document.getElementsByClassName("testimonialcard");
-  window.keypress=()=>{
-    console.log("keypress")
-  }
-  
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-      
-       
-  //           setStep(step+1);
-         
-  //   }, 4000);
-  //   return () => clearInterval(interval);
-  // }, []);
+  //Development logic
+ //Logic behind Testimonial Images
+ //We should have minimum  5 objects.
+ //if we are currently at step<=n-3 then We can take the images in increasing order
+ //for the top right circle we can show the current image
+ //if we are step===data.length-3 then show the images in decreasing order ignoring the second circle
+
   return (
     <div className="testimonialcard" >
            {step-1<0?(""):(<div className="left_arrow_test" onClick={()=>{setStep(step-1)}}>
@@ -39,12 +27,19 @@ const TestiMonialCards=({step,setStep,data})=>{
             <div className="testimonials_imagepart">
                 <div className="test_image">
                 
-                    <img src={data[step].images.image1} alt="people"  className="firstcircle"/>
-                    <img src={data[step].images.image2} alt="people"  className="secondcircle"/>
-                    <img src={data[step].images.image3} alt="people"  className="thirdcircle"/>
-                    <img src={data[step].images.image4} alt="people"  className="fourthcircle"/>
-                
-                 
+                    <>
+                    <img src={step<=data.length-3-1?data[step+1].images.image1:data[step-1].images.image1} alt="people"  className="firstcircle"/>
+                    <img src={data[step].images.image1} alt="people"  className="secondcircle"/>
+                    <img src={step<=data.length-4?(data[step+2].images.image1):(step===data.length-3?data[step+1].images.image1:
+                    (step===data.length-2?
+                    data[step+1].images.image1:(step===data.length-1?data[step-2].images.image1:"")))} alt="people"  className="thirdcircle"/>
+                    <img src={
+                      step<=data.length-4?(
+                      data[step+3].images.image1):(step===data.length-3?(
+                            data[step-3].images.image1
+                      ):(step===data.length-3?(data[step-3].images.image1):(step===data.length-2 || step===data.length-1?(data[step-3].images.image1):(""))))} alt="people"  className="fourthcircle"/>
+                </>
+              
                 
                 </div>
 
@@ -58,8 +53,6 @@ const TestiMonialCards=({step,setStep,data})=>{
                     <div className="color_container">
 
                     </div>
-             
-
             </div>
             <div className="testimonials_contentpart">
               <div className="testimonialcontent_head">
