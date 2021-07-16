@@ -26,6 +26,7 @@ svg {
   background-repeat: no-repeat;
   background-size: cover;
   transition: linear all 0.5s;
+  border-radius: 50px;
 }
 polygon {
   width: 50%;
@@ -38,4 +39,67 @@ svg:hover {
   display: flex;
   padding-top: 115px;
   overflow-y: scroll;
+}
+.brand_hexagon_box_small {
+  /* display: none; */
+}
+@media only screen and (max-width: 768px) {
+  .brand_we_work_contain h2 {
+    font-size: 30px;
+    padding-top: 0px;
+  }
+  .brand_we_work_contain p {
+    font-size: 10px;
+    width: 48%;
+  }
+  .brand_hexagon_box {
+    display: none;
+  }
+
+  .brand_hexagon_box_small {
+    /* display: block; */
+    position: relative;
+
+    height: 437px;
+  }
+  .small_box_1 {
+    position: absolute;
+    bottom: 0;
+    left: 24%;
+  }
+  .small_box_2 {
+    position: absolute;
+    top: 0;
+    left: 24%;
+    transform: rotate(180deg);
+  }
+  .small_box_4 {
+    margin-top: 15px;
+  }
+  .small_box_5 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .small_box_6 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+  .small_box_7 {
+    display: flex;
+    overflow-y: scroll;
+    height: 100%;
+    width: 52%;
+    position: absolute;
+    top: 27%;
+    left: 26%;
+  }
+  svg {
+    width: 220px;
+  }
+  svg:hover {
+    transform: scaleX(1.1);
+    transition: linear all 0.5s;
+  }
 }

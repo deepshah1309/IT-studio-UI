@@ -1,4 +1,13 @@
 .box2_hexagon {
   margin-top: 150px;
-  margin-left: -5px;
+  margin-left: -55px;
+}
+/* .box1_hexagon {
+  margin-left: -50px;
+} */
+.box1_bww {
+  margin-left: -50px;
+}
+
+@media only screen and (max-width: 768px) {
 }
