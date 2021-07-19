@@ -87,19 +87,21 @@ svg:hover {
     top: 50%;
   }
   .small_box_7 {
-    display: flex;
+    /* display: flex;
     overflow-y: scroll;
     height: 100%;
     width: 52%;
     position: absolute;
     top: 27%;
-    left: 26%;
+    left: 26%; */
+    margin-top: -308px;
+    z-index: 100;
   }
   svg {
     width: 220px;
   }
   svg:hover {
-    transform: scaleX(1.1);
+    transform: scale(1.1);
     transition: linear all 0.5s;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Carousel from "react-multi-carousel";
+
 import "react-multi-carousel/lib/styles.css";
 import "./BrandWeWork.css";
 import data from "./BrandWeWorkData";
@@ -8,7 +8,8 @@ import BrandWeWorkSmallCard from "../BrandWeWorkCard/BrandWeWorkSmallCard";
 import polygon from "../../../Assets/brand_we_build_assets/Path 15562.png";
 import polygon2 from "../../../Assets/brand_we_build_assets/Path 15563.png";
 import polygon3 from "../../../Assets/brand_we_build_assets/Path 15564.png";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 const BrandWeWork = () => {
   const [mobileView, setMobileView] = useState({ width: window.innerWidth });
 
@@ -20,23 +21,7 @@ const BrandWeWork = () => {
   }, []);
 
   let isTrue = mobileView.width <= 768;
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3, // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2, // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-  };
+
   return (
     <section className="brand_we_work_main_box">
       <div className="brand_we_work_contain">
@@ -74,9 +59,18 @@ const BrandWeWork = () => {
               <img src={polygon3} alt="" />
             </div>
             <div className="small_box_7">
-              {data.map((logo, i) => (
-                <BrandWeWorkSmallCard logo={logo} i={i} key={logo.id} />
-              ))}
+              <Carousel
+                showArrows={false}
+                autoPlay={true}
+                showStatus={false}
+                showIndicators={false}
+                swipeable={true}
+                stopOnHover={true}
+              >
+                {data.map((logo, i) => (
+                  <BrandWeWorkSmallCard logo={logo} i={i} key={logo.id} />
+                ))}
+              </Carousel>
             </div>
           </div>
         )}
