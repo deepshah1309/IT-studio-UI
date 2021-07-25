@@ -9,6 +9,7 @@ import BrandWeWork from "./Components/BrandWeWork/BrandWeWork/BrandWeWork";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import TestiMonials from "./Components/TestiMonials/TestiMonials";
+import OurTeam from "./Components/OurTeam/OurTeam/OurTeam";
 const Home = () => {
   return (
     <div className="Home">
@@ -24,8 +25,9 @@ const Home = () => {
       <WeBuildSection />
 
       <OurService />
+      <TestiMonials />
       <BrandWeWork />
-      <TestiMonials/>
+      <OurTeam />
 
       {/* <Contact /> */}
       <Footer />

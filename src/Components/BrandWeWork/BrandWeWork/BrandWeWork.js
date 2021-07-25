@@ -64,7 +64,7 @@ const BrandWeWork = () => {
                 autoPlay={true}
                 showStatus={false}
                 showIndicators={false}
-                swipeable={true}
+                swipeAble={true}
                 stopOnHover={true}
               >
                 {data.map((logo, i) => (

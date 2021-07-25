@@ -1,0 +1,27 @@
+.hex-grid-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -15%;
+  margin-top: -50px;
+  /* margin-left:-50px; */
+}
+.box2 {
+  margin-top: 51px;
+  margin-left: -50px;
+}
+.hex-container {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+  margin-left: -50px;
+
+  background: transparent;
+  background-color: #0e1333;
+}
+.box1 {
+  margin-left: -50px;
+}
+.hex-grid-row:nth-child(even) {
+}
