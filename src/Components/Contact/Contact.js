@@ -42,7 +42,7 @@ function Contact() {
           <div className="contact-center">
             <div className="contact-text">Get In Touch</div>
             <div className="contact-bottom">Feel free to drop a line below</div>
-            <form className="contact-form" style={{ paddingTop: "20px" }}>
+            <form className="contact-form">
               <input
                 type="text"
                 name="form-name"
@@ -69,7 +69,16 @@ function Contact() {
             isMarkerShown
             googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
             loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div style={{ height: `871px` }} />}
+            containerElement={
+              <div
+                style={
+                  {
+                    // opacity: "0.6",
+                  }
+                }
+                className="map"
+              />
+            }
             mapElement={<div style={{ height: `100%` }} />}
           />
         </div>
