@@ -29,7 +29,7 @@ const Home = () => {
       <BrandWeWork />
       <OurTeam />
 
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </div>
   );

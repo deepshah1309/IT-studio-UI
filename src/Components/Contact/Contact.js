@@ -42,22 +42,22 @@ function Contact() {
           <div className="contact-center">
             <div className="contact-text">Get In Touch</div>
             <div className="contact-bottom">Feel free to drop a line below</div>
-            <form className="contact-form">
+            <form className="contact-form" style={{ paddingTop: "20px" }}>
               <input
                 type="text"
                 name="form-name"
                 className="form-name inp"
-                placeholder="Enter your Name ..."
+                placeholder="Name"
               />
               <input
                 type="email"
                 name="form-email"
                 className="form-email inp"
-                placeholder="Enter your Email ..."
+                placeholder="E-mail Address"
               />
               <textarea
                 name="text-area"
-                placeholder="Enter Text here ..."
+                placeholder="Type Your Message"
                 className="form-textarea inp"
               ></textarea>
               <button className="form-btn">Send</button>
@@ -69,15 +69,7 @@ function Contact() {
             isMarkerShown
             googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
             loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={
-              <div
-                style={{
-                  
-                  // opacity: "0.6",
-                }}
-                className="map"
-              />
-            }
+            containerElement={<div style={{ height: `871px` }} />}
             mapElement={<div style={{ height: `100%` }} />}
           />
         </div>
@@ -85,7 +77,7 @@ function Contact() {
 
       <div className="contact-info">
         <div className="info">
-          <img src={Address} className="info-svg" />
+          <img src={Address} alt="" className="info-svg" />
           <div>
             <div className="info-text">
               <div className="info-header">Address</div>
@@ -97,14 +89,14 @@ function Contact() {
           </div>
         </div>
         <div className="info">
-          <img src={Call} className="info-svg" />
+          <img src={Call} alt="" className="info-svg" />
           <div className="info-arr">
             <div className="info-header">Call For Updates</div>
             <div>+91-9413666423</div>
           </div>
         </div>
         <div className="info">
-          <img src={Email} className="info-svg" />
+          <img src={Email} alt="" className="info-svg" />
           <div className="info-arr">
             <div className="info-header">Email Us</div>
             <div>
@@ -116,10 +108,10 @@ function Contact() {
       </div>
 
       <div className="social-handles">
-        <img src={LinkedIn} className="sh" />
-        <img src={Facebook} className="sh" />
-        <img src={Twitter} className="sh" />
-        <img src={Instagram} className="sh" />
+        <img src={LinkedIn} alt="" className="sh" />
+        <img src={Facebook} alt="" className="sh" />
+        <img src={Twitter} alt="" className="sh" />
+        <img src={Instagram} alt="" className="sh" />
       </div>
     </div>
   );

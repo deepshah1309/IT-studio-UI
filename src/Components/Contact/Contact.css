@@ -17,8 +17,9 @@
 
 .contact-header {
   color: black;
-  font-size: large;
-  font-size: x-large;
+  font-size: 50px;
+  /* font-weight: 800; */
+
   margin-top: 5%;
 }
 
@@ -73,15 +74,14 @@
 }
 
 .contact-middle {
-  width: 50%;
-  height: 100%;
+  width: 60%;
+  height: 800px;
   display: flex;
   flex-direction: column;
   background-color: white;
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  height: 100%;
 
   border-radius: 25px;
 
@@ -91,7 +91,21 @@
 .contact-center {
   margin-left: 10%;
 }
-
+input {
+  height: 69px;
+  font-size: 25px;
+  width: 610px;
+}
+input::placeholder {
+  font-size: 25px;
+}
+textarea {
+  font-size: 25px;
+  font-family: Poppins;
+}
+textarea::placeholder {
+  font-size: 25px;
+}
 .contact-map {
   width: 50%;
   height: 50%;
@@ -102,11 +116,13 @@
 }
 
 .contact-text {
-  font-size: x-large;
+  font-size: 47px;
+  margin-left: -42px;
 }
 
 .contact-bottom {
-  font-size: small;
+  font-size: 25px;
+  margin-left: -42px;
 }
 
 .map {
@@ -159,18 +175,20 @@ form {
 .form-btn {
   align-self: flex-start;
   left: 10%;
-  width: 20%;
-  height: 20%;
+  width: 270px;
+  height: 54px;
   padding: 10px;
   border-radius: 10px;
   background: linear-gradient(to bottom, #4fc0e6 0%, #382bee 100%);
   color: aliceblue;
+  font-size: 25px;
   font-weight: bold;
   padding-right: 20px;
   padding-left: 20px;
   outline: none;
   margin-top: 5px;
   border: none;
+  font-family: Poppins;
 }
 
 @media (max-width: 1000px) {
@@ -234,7 +252,7 @@ form {
 
   .contact-map {
     width: 120%;
-    height: 120%;
+    height: 160%;
     transform: translate(-8%, -9%);
   }
 
