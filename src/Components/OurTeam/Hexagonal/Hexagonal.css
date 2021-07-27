@@ -4,7 +4,7 @@
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   transition: 2s;
   background-color: white;
-  opacity: 0.5;
+  opacity: 0.3;
   margin: 2px 4px;
   margin-bottom: 15px;
   background-color: #0e1333;
@@ -13,6 +13,7 @@
   color: rgb(255, 255, 255);
 
   position: absolute;
+
   z-index: 1000;
   width: 100%;
   text-align: center;
@@ -41,6 +42,7 @@
   /* display: flex;
     justify-content: center;
     align-items: center; */
+
   position: absolute;
   z-index: 1000;
   width: 100%;

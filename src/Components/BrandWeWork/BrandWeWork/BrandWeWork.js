@@ -10,6 +10,7 @@ import polygon2 from "../../../Assets/brand_we_build_assets/Path 15563.png";
 import polygon3 from "../../../Assets/brand_we_build_assets/Path 15564.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import ScrollContainer from "react-indiana-drag-scroll";
 const BrandWeWork = () => {
   const [mobileView, setMobileView] = useState({ width: window.innerWidth });
 
@@ -32,11 +33,13 @@ const BrandWeWork = () => {
         </p>
       </div>
       <div>
-        <div className="brand_hexagon_box">
-          {data.map((logo, i) => (
-            <BrandWeWorkCard logo={logo} i={i} key={logo.id} />
-          ))}
-        </div>
+        <ScrollContainer className="scroll-container">
+          <div className="brand_hexagon_box">
+            {data.map((logo, i) => (
+              <BrandWeWorkCard logo={logo} i={i} key={logo.id} />
+            ))}
+          </div>
+        </ScrollContainer>
 
         {isTrue && (
           <div className="brand_hexagon_box_small">

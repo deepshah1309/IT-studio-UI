@@ -38,7 +38,7 @@ svg:hover {
 .brand_hexagon_box {
   display: flex;
   padding-top: 115px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 .brand_hexagon_box_small {
   /* display: none; */
