@@ -2,14 +2,14 @@ import React from "react";
 import "./Home.css";
 
 import { Helmet } from "react-helmet";
-import WeBuildSection from "./Components/WeBuildSection/WeBuildSection/WeBuildSection";
-import Header from "./Components/Header/Header";
-import OurService from "./Components/OurService/OurService/OurService";
-import BrandWeWork from "./Components/BrandWeWork/BrandWeWork/BrandWeWork";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
-import TestiMonials from "./Components/TestiMonials/TestiMonials";
-import OurTeam from "./Components/OurTeam/OurTeam/OurTeam";
+import WeBuildSection from "./Components/Home/WeBuildSection/WeBuildSection/WeBuildSection";
+import Header from "./Components/Home/Header/Header";
+import OurService from "./Components/Home/OurService/OurService/OurService";
+import BrandWeWork from "./Components/Home/BrandWeWork/BrandWeWork/BrandWeWork";
+import Contact from "./Components/Home/Contact/Contact";
+import Footer from "./Components/Home/Footer/Footer";
+import TestiMonials from "./Components/Home/TestiMonials/TestiMonials";
+import OurTeam from "./Components/Home/OurTeam/OurTeam/OurTeam";
 const Home = () => {
   return (
     <div className="Home">
